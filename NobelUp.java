@@ -13,17 +13,17 @@ public class NobelUp extends Robot {
          while (true) {
                 turnGunRight(75);
                 ahead(50);	
-				back(25);	
-				turnGunRight(79); 
+		back(25);	
+		turnGunRight(79); 
                 turnGunLeft(55);
-				ahead(50);	
-				back(25);	
-				turnGunRight(79);
-				turnGunLeft(55);
-				ahead(50);	
-				back(25);	
-				ahead(50);	
-				back(25);
+		ahead(50);	
+		back(25);	
+		turnGunRight(79);
+		turnGunLeft(55);
+		ahead(50);	
+		back(25);	
+		ahead(50);	
+		back(25);
 }
 	}
 	// após inimigo detectado / ocorre o aumento do nível do tiro, dependendo da distância.
@@ -38,7 +38,7 @@ public class NobelUp extends Robot {
 		}	
         // Mira segue o inimigo após detectado.
         turnGunRight(getHeading() - getGunHeading() + e.getBearing());
-        fire(1);
+        fire(2);
 	}
 	// Ação (Movimentar) ao ser atingido.
     public void onHitByBullet(HitByBulletEvent e) {
